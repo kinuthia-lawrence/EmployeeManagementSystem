@@ -851,7 +851,7 @@ public class dashboardController implements Initializable {
             if (option.get().equals(ButtonType.OK)) {
 
                 logout.getScene().getWindow().hide();
-                Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
                 Stage stage = new Stage();
                 Scene scene = new Scene(root);
 
