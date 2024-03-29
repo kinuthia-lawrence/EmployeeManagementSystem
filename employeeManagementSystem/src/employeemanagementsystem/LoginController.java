@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package employeemanagementsystem;
 
 import java.io.IOException;
@@ -77,12 +72,13 @@ public class LoginController implements Initializable {
             }else{
                 if(result.next()){
                     getData.username = username.getText();
-                    
+
+                    /*
                     alert = new Alert(AlertType.INFORMATION);
                     alert.setTitle("Information Message");
                     alert.setHeaderText(null);
                     alert.setContentText("Successfully Login");
-                    alert.showAndWait();
+                    alert.showAndWait();*/
                     
                     loginBtn.getScene().getWindow().hide();
                     Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
